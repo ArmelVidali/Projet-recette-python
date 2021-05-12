@@ -332,12 +332,12 @@ typo = Font(family="Times", size = 20, weight = "bold" ,slant = "roman")
 
 data_aliments = sqlite3.connect('aliments2.db')
 a = data_aliments.cursor()
-#a.execute("""CREATE TABLE liste_aliments("aliment" str, "kcal" float)""")
+a.execute("""CREATE TABLE liste_aliments("aliment" str, "kcal" float)""")
 
 
 data_recettes = sqlite3.connect('recettes.db')
 r = data_recettes.cursor()
-#r.execute("""CREATE TABLE liste_recettes("nom_recette" str, "aliment" str ,"poid" float, "kcal" float, "poid_total" float)""")
+r.execute("""CREATE TABLE liste_recettes("nom_recette" str, "aliment" str ,"poid" float, "kcal" float, "poid_total" float)""")
 
 
 
